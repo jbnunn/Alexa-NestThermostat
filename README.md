@@ -12,6 +12,7 @@ Use your Amazon Echo and the Alexa Skills Kit to control your Nest Thermostat. Y
 ## Caveats
 - The Nest by default uses the Celsius temperature scale. This code does conversion to use Fahrenheit. If you wish to use Celsius, look at the functions `temp_in` and `temp_out`, which do the conversions.
 - If you have more than one Nest Thermostat in your structure, you'll have to specify the index of the one you want to control. This code defaults to the first unit found when it queries your available thermostats (`index=0`).
+- There is an official [REST API](https://developer.nest.com/documentation/cloud/rest-guide) for Nest thermostat which might be more efficient to use than the code here. If someone wants to fork and update this project to use that, I'll integrate it.
 
 
 ## Alexa Skills Kit Documentation
