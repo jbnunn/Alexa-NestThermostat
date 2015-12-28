@@ -1,0 +1,31 @@
+StateIntent what the temperature is set to
+StateIntent what the temperature is
+ChangeIntent to turn it up to {temperature}
+ChangeIntent to turn it down to {temperature}
+ChangeIntent to turn it to {temperature}
+ChangeIntent set the thermostat to {temperature}
+ChangeIntent set to {temperature}
+ChangeIntent change the thermostat to {temperature}
+ChangeIntent change the temperature to {temperature}
+ChangeIntent set the temperature to {temperature}
+ChangeIntent to go to {temperature}
+PowerIntent to turn {powermode} the heater
+PowerIntent to turn {powermode} the heat
+PowerIntent to turn {powermode} the air conditioner
+PowerIntent to turn {powermode}
+HelpIntent help
+HelpIntent help me
+HelpIntent what can I ask you
+HelpIntent get help
+HelpIntent to help
+HelpIntent to help me
+HelpIntent what commands can I ask
+HelpIntent what commands can I say
+HelpIntent what can I do
+HelpIntent what can I use this for
+HelpIntent what questions can I ask
+HelpIntent what can you do
+HelpIntent what do you do
+HelpIntent how do I use you
+HelpIntent how can I use you
+HelpIntent what can you tell me

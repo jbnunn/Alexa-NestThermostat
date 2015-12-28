@@ -1,0 +1,30 @@
+{
+  "intents": [
+    {
+      "intent": "StateIntent",
+      "slots": []
+    },
+    {
+      "intent": "PowerIntent",
+      "slots": [
+        {
+          "name":"powermode",
+          "type":"POWER_STATES"
+        }
+      ]
+    },
+    {
+      "intent": "ChangeIntent",
+      "slots": [
+        {
+          "name":"temperature",
+          "type":"AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    }
+  ]
+}
