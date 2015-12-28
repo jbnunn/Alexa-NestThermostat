@@ -26,7 +26,7 @@ Here are a few direct links to Alexa and Lambda documentation:
 
 
 ## Disclaimers
-The code here is based off of an unsupported Nest API and is subject to change without notice. Amazon Echo does not officially support interactions with the Nest Thermostat. The authors claim no responsibility for damages to your Nest or property by use of the code within. You may incur charges using AWS Lambda, but there is a free tier available for up to 1M requests per month that you may be eligible for--check [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/) for details.
+The code here is based off of an unsupported Nest API and is subject to change without notice. The authors claim no responsibility for damages to your Nest or property by use of the code within. You may incur charges using AWS Lambda, but there is a free tier available for up to 1M requests per month that you may be eligible for--check [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/) for details.
 
 ## License
 This is free and unencumbered software released into the public domain.
