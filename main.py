@@ -195,7 +195,7 @@ def buildResponse(sessionAttributes, speechletResponse):
     })
 
 class Nest:
-    def __init__(self, username, password, serial = None, index = 1, units="F"):
+    def __init__(self, username, password, serial = None, index = 0, units="F"):
         self.username   = username
         self.password   = password
         self.serial     = serial

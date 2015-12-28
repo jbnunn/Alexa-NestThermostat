@@ -1,14 +1,18 @@
 # Alexa-NestThermostat
-Using your Echo with the Alexa Skills Kit to control your Nest Thermostat
 
 ## Description
-By using your Echo and Alexa Skills Kit and AWS Lambda, you can control your Nest Thermostat through your Amazon Echo.
+Use your Amazon Echo and the Alexa Skills Kit to control your Nest Thermostat. You'll create an Alexa Skills Kit (ASK) app that fires off requests to AWS Lambda. Lambda in turn will call the NEST API to control a thermostat in your structure.
 
 ## Usage
 1. Create an Alexa Skills Kit (ASK) app, using the intent schema, custom slot values, and sample utterances in this repo. Choose an invocation name like _my Nest_.
-2. Use the code in `main.py` as your Lambda function. I use [DynamoDB](https://aws.amazon.com/dynamodb/) as a simple key-value store for my Nest username and password. You can do the same, or just `self.username` and `self.password` with your own hardcoded values. Additionally, substitute `amzn1.echo-sdk-ams.app.<your-alexa-skills-id>` with the ID of the ASK skill you created. (Note: The interactions here with Nest use the Fahrenheit scale.)
+2. Use the code in `main.py` as your Lambda function. I use [DynamoDB](https://aws.amazon.com/dynamodb/) as a simple key-value store for my Nest username and password. You can do the same, or just `self.username` and `self.password` with your own hardcoded values. Additionally, substitute `amzn1.echo-sdk-ams.app.<your-alexa-skills-id>` with the ID of the ASK skill you created.
 4. Modify your ASK skill with the [ARN](http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of your newly created function.
 5. Test your interactions with the ASK console. When you've got it working, try it on your Echo: `Alexa, ask my Nest to turn on the heat`, or `Alexa, ask my Nest what the temperature is set to`.
+
+## Caveats
+- The Nest by default uses the Celsius temperature scale. This code does conversion to use Fahrenheit. If you wish to use Celsius, look at the functions `temp_in` and `temp_out`, which do the conversions.
+- If you have more than one Nest Thermostat in your structure, you'll have to specify the index of the one you want to control. This code defaults to the first unit found when it queries your available thermostats (`index=0`).
+
 
 ## Alexa Skills Kit Documentation
 The documentation for the Alexa Skills Kit is available on the [Amazon Apps and Services Developer Portal](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/).
